@@ -1,0 +1,55 @@
+@import "https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4";
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #022c22;
+}
+::-webkit-scrollbar-thumb {
+    background: #047857;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #059669;
+}
+
+body {
+    background-color: #ecfdf5;
+    color: #064e3b;
+    background-image: radial-gradient(circle at 50% 0%, #10b98125 0%, transparent 60%),
+                      radial-gradient(circle at 100% 100%, #065f4620 0%, #ecfdf5 100%);
+    background-attachment: fixed;
+}
+
+.number-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #065f46 0%, #047857 100%);
+    border: 1px solid #10b981;
+    font-weight: 800;
+    font-size: 0.75rem;
+    color: #ffffff;
+    box-shadow: 0 3px 6px rgba(4, 120, 87, 0.3);
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+/* Προσθήκη κενού διαστήματος και σαφούς διαχωρισμού στις κάρτες προτάσεων (Tab 3) */
+#analysis-container .grid > div {
+    background: #ffffff;
+    border: 1px solid #a7f3d0;
+    box-shadow: 0 4px 12px rgba(6, 78, 59, 0.08);
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+#analysis-container .grid {
+    gap: 1.5rem;
+}
